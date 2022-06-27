@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+   <title>login page</title>
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+   <div id="registration">
+       <h3 class="text-center text-white pt-5">regi form</h3>
+       <div class="container">
+           <div id="registration-row" class="row justify-content-center align-items-center">
+               <div id="registration-column" class="col-md-6">
+                   <div id="registration-box" class="col-md-12">
+                       <form id="registration-form" class="form" action="/api/registration" method="post">
+                           <h3 class="text-center text-info">registration</h3>
+                           <div class="form-group">
+                               <label for="UserName" class="text-info">UserName:</label><br>
+                               <input type="text" name="UserName" id="UserName" class="form-control" required>
+                           </div>
+                           <div class="form-group">
+                            <label for="emailAddress" class="text-info">email Address:</label><br>
+                            <input type="email" name="emailAddress" id="emailAddress" class="form-control" required>
+                        </div>
+                           <div class="form-group">
+                               <label for="password" class="text-info">Password:</label><br>
+                               <input type="password" name="password" id="password" class="form-control" required>
+                           </div>
+                           <div class="form-group">
+                               <br>
+                               <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+                           </div>
+                           
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</body>
+</html>
